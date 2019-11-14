@@ -8,7 +8,7 @@ node_js:
 before_install:
 - cd server
 - openssl aes-256-cbc -K $encrypted_326998a00d0a_key -iv $encrypted_326998a00d0a_iv
-  -in .env.enc -out .env -d
+  -in test.env.enc -out test.env -d
 - cd -
 - export PATH=~/npm/node_modules/.bin:$PATH
 install:
